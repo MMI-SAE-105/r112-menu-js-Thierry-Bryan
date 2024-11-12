@@ -1,6 +1,6 @@
-- nom :
-- prénom :
-- URL Netlify :
+- nom : Thierry
+- prénom : Bryan
+- URL Netlify : https://snazzy-concha-a2f5ec.netlify.app/
 
 # Travail
 
