@@ -4,23 +4,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <h1>Le chat persan</h1>
-    <p>
+    <h1 class="page__title">Le chat persan</h1>
+    <p class="page__description">
       Découvrez le chat Persan, une race élégante et apaisante, idéale pour les
       foyers calmes.
     </p>
-    <section>
-      <ul>
-        <div>
+    <section class="cat-details">
+      <ul class="cat-details__list">
+        <div class="cat-details__item">
           <img
+            class="cat-details__image"
             src="../public/img/cats/chat persan.avif"
             alt="chat numéro 1"
             width="500"
           />
-          <h3>Description</h3>
-          <p>
+          <h3 class="cat-details__title">Description</h3>
+          <p class="cat-details__text">
             Le chat Persan est réputé pour son apparence majestueuse, avec un
             pelage long et soyeux et un visage aplati et caractéristique. Ses
             grands yeux ronds et son expression douce en font une race très
@@ -31,23 +33,41 @@
             recherchent un animal apaisant et doux.
           </p>
         </div>
-        <div>
-          <h3>Anecdote</h3>
-          <p>
+        <div class="cat-details__item">
+          <h3 class="cat-details__title">Anecdote</h3>
+          <p class="cat-details__text">
             Saviez-vous que le chat Persan est l’une des races de chats les plus
             anciennes ? Originaire de la Perse (l’actuel Iran), il a été
             introduit en Europe au 17e siècle et est depuis devenu populaire
             pour sa beauté unique et son tempérament paisible.
           </p>
         </div>
-        <li><a href=".">Retour à la liste des chats</a></li>
+        <li class="cat-details__link">
+          <a href=".">Retour à la liste des chats</a>
+        </li>
       </ul>
     </section>
   </body>
-  <footer>
-    <li><a href=".">Dossier courant (liste des chats)</a></li>
-    <li><a href="index.html">Index du dossier (liste des chats)</a></li>
-    <li><a href="..">Dossier parent (index des chats et chiens)</a></li>
-    <li><a href="/">Racine du site (index des chats et chiens)</a></li>
+  <footer class="footer">
+    <ul class="footer__list">
+      <li class="footer__item">
+        <a class="footer__link" href=".">Dossier courant (liste des chats)</a>
+      </li>
+      <li class="footer__item">
+        <a class="footer__link" href="index.html"
+          >Index du dossier (liste des chats)</a
+        >
+      </li>
+      <li class="footer__item">
+        <a class="footer__link" href=".."
+          >Dossier parent (index des chats et chiens)</a
+        >
+      </li>
+      <li class="footer__item">
+        <a class="footer__link" href="/"
+          >Racine du site (index des chats et chiens)</a
+        >
+      </li>
+    </ul>
   </footer>
 </html>
