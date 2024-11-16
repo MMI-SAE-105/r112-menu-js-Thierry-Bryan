@@ -42,5 +42,87 @@ On ajoute les propriétés "visibility: hidden" et "opacity: 0" pour masquer le 
 }
 
 .page {
-  background-color: aqua;
+  background-color: #fff8e1;
+}
+
+.page__title {
+  font-size: 40px;
+  text-align: center;
+  font-family: 'Bangers';
+}
+
+.page__description {
+ font-size: 1.2rem;
+ margin-bottom: 30px;
+}
+
+.cat-details {
+  margin: 30px;
+  background-color: white;
+  padding: 20px;
+}
+
+.cat-details__list {
+  list-style: none;
+  padding: 0;
+}
+
+.cat-details__item {
+  margin-bottom: 20px;
+}
+
+.cat-details__image {
+  align-items: center;
+  max-width: 100%;
+  height: auto;
+}
+
+.cat-details__title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.cat-details__text {
+  font-size: 1rem;
+}
+
+.cat-details__link a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1rem;
+  padding: 10px 20px;
+  background-color: #4c93af;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.cat-details__link:hover {
+  text-decoration: underline;
+  color: #ffffff;
+}
+
+.footer {
+  background-color: #434040;
+  color: white;
+  padding: 10px 0;
+}
+
+.footer__list {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+.footer__item {
+  margin: 5px;
+}
+
+.footer__link {
+  color: white;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.footer__link:hover {
+  text-decoration: underline;
 }
