@@ -44,6 +44,9 @@ On ajoute les propriétés "visibility: hidden" et "opacity: 0" pour masquer le 
 body {
   font-family: Arial, sans-serif;
   background-color: #fff8e1;
+  width: 400px;
+  margin: 0 auto;
+  overflow-x: hidden;
 }
 
 /* Pages */
@@ -140,10 +143,13 @@ body {
   padding: 10px 20px;
   position: relative;
   background-color: rgb(201, 247, 248);
+  border-radius: 10px;
+ 
 }
 
 .header__title {
   font-family: 'Bangers';
+  text-align: center;
 }
 
 .header__menu-btn {
@@ -171,19 +177,48 @@ body {
 }
 
 .menu__link {
-    text-decoration: none;
-    color: rgb(58, 0, 128);
-    border-radius: 5px;
-    padding: 5px;
-    background-color: transparent;
+  text-decoration: none;
+  color: rgb(58, 0, 128);
+  border-radius: 5px;
+  padding: 5px;
+  background-color: transparent;
 }
 
 .menu__link:hover {
   background-color: rgb(0, 3, 4);
   color: #ffffff;
 }
+.subtitle {
+  margin-top: -10px;
+}
 
 .main {
   padding: 40px;
 }
 
+.section__item {
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.section__title {
+  align-items: center;
+  margin: 10px;
+  text-align: center;
+}
+
+.section__link {
+  text-decoration: none;
+  padding: 5px;
+  background-color: transparent;
+  border-radius: 5px;
+  cursor: pointer;
+  color: rgb(58, 0, 128)
+}
+
+.section__link:hover {
+  color: rgb(255, 255, 255);
+  background-color: black;
+}
