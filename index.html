@@ -1,66 +1,84 @@
 <!DOCTYPE html>
 <html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu JS</title>
+    <link rel="stylesheet" href="/src/css/components/menu.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+    <script type="module" src="/src/js/script.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="header__title">Mini-Guide de Races de Chiens et Chats</h1>
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Menu JS</title>
-  <!-- Déclaration de la feuille de style -->
-  <link rel="stylesheet" href="/src/css/components/menu.css" />
-  <script type="module" src="/src/js/script.js"></script>
-</head>
+      <div class="header__end">
+        <button
+          class="header__menu-btn menu-btn"
+          aria-label="menu"
+          aria-expanded="false"
+          aria-controls="mainNav"
+        >
+          <img
+            src="/public/img/logo/Hamburger_icon.svg.png"
+            alt="menu hamburger"
+            width="20"
+          />
+        </button>
 
-<body>
-  <!-- En-tête de la page -->
-  <header class="header container">
-    <h1>Mini-Guide de Races de Chiens et Chats</h1>
-    <p>Découvrez les races les plus populaires et trouvez le compagnon idéal.</p>
-
-    <div class="header__end">
-
-      <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav">
-        <img src="/public/img/logo/Hamburger_icon.svg.png" alt="menu hamburger" width="20">
-      </button>
-
-      <!-- Menu principal -->
-      <nav class="header__menu menu" id="mainNav" aria-hidden="true">
-        <ul class="menu__list list-unstyled">
-          <li class="menu__item">
-            <a class="menu__link" href="/cats/index.html">Liste des chats</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="/dogs/index.html">Liste des chiens</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="#">Item de menu trois</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="#">Item de menu quatre</a>
-          </li>
-        </ul>
-      </nav>
-      <!-- Fin du menu principal -->
-    </div>
-  </header>
-  <!-- Contenu principal de la page -->
-  <main>
-    <p>Ce guide vous permet d’en apprendre davantage sur les particularités de chaque race de chat et de chien. Que vous soyez à la recherche d’un animal de compagnie ou simplement curieux, explorez notre sélection pour trouver la race qui vous correspond.
-    </p>
-    <section>
-      <div>
-        <h2>Liste des chats</h2>
-        <a href="/cats/index.html"><img src="/public/img/cats/chats-accueil.jpg" alt="Petits chatons" width="300"></a>
-        <a href="/cats/index.html">Liste des chats</a>
+        <nav class="header__menu menu" id="mainNav" aria-hidden="true">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a class="menu__link" href="/cats/index.html">Liste des chats</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="/dogs/index.html">Liste des chiens</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Item de menu trois</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Item de menu quatre</a>
+            </li>
+          </ul>
+        </nav>
       </div>
-      <div>
-        <h2>Liste des chiens</h2>
-        <a href="/dogs/index.html"> <img src="/public/img/dogs/Chiens accueil.jpg" alt="Chiens accueil" width="300"></a>
-        <a href="/dogs/index.html">Liste des chiens</a>
-      </div>
-    </section>
-  </main>
-  <!-- Fin du contenu principal -->
+    </header>
 
-</body>
-
+    <main class="main">
+      <h2 class="subtitle">
+        Découvrez les races les plus populaires et trouvez le compagnon idéal.
+      </h2>
+      <p class="main-content__description">
+        Ce guide vous permet d’en apprendre davantage sur les particularités de
+        chaque race de chat et de chien. Que vous soyez à la recherche d’un
+        animal de compagnie ou simplement curieux, explorez notre sélection pour
+        trouver la race qui vous correspond.
+      </p>
+      <section class="section">
+        <div class="section__item">
+          <h2 class="section__title">Liste des chats</h2>
+          <a href="/cats/index.html" class="section__link"
+            ><img
+              src="/public/img/cats/chats-accueil.jpg"
+              alt="Petits chatons"
+              width="300"
+              class="section__image"
+          /></a>
+          <a href="/cats/index.html" class="section__link">Liste des chats</a>
+        </div>
+        <div class="section__item">
+          <h2 class="section__title">Liste des chiens</h2>
+          <a href="/dogs/index.html" class="section__link"
+            ><img
+              src="/public/img/dogs/Chiens accueil.jpg"
+              alt="Chiens accueil"
+              width="300"
+              class="section__image"
+          /></a>
+          <a href="/dogs/index.html" class="section__link">Liste des chiens</a>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>

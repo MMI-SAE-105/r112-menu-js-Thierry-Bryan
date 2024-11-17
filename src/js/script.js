@@ -6,9 +6,10 @@ const nav = document.querySelector("nav");
 
 toggle.addEventListener("click", () => {
   // Mise à jour des attributs ARIA pour accessibilité
-  const isOpen = toggle.ariaExpanded === "true";
+    const isOpen = toggle.ariaExpanded === "true";
     const isClosed = !isOpen;
     console.log("isOpen : ", isOpen, "isClosed : ", isClosed);
+
   nav.ariaHidden = isOpen;
   toggle.ariaExpanded = isClosed;
 
