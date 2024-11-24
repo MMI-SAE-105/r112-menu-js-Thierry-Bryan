@@ -4,60 +4,58 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="/src/css/components/menu.css" />
+
   </head>
   <body class="page">
     <h1 class="page__title">Liste des races de chats</h1>
-    <p>Découvrez les particularités de chaque race de chat pour trouver le compagnon qui vous correspond le mieux.</p>
-    <section>
-      <ul class="page__liste">
-        <div>
-          <h3>Persan</h3>
-          <li class="page__liste-icons">
-            <a href="chat-1.html">Le chat Persan</a>
-          </li>
+    <p class="page__description">Découvrez les particularités de chaque race de chat pour trouver le compagnon qui vous correspond le mieux.</p>
+    <section class="section">
+      <ul >
+        <li class="section__item">
+          <h3 class="section__title">Persan</h3>
+          <a class="section__link" href="chat-1.html">Le chat Persan</a>
           <img
             src="/public/img/cats/chat persan.avif"
             alt="chat persan"
-            width="500"
+            width="300"
           />
-        </div>
-        <div>
-          <h3>Bengal</h3>
-          <li class="page__liste-icons">
-            <a href="chat-2.html">Le chat Bengal</a>
-          </li>
+        </li>
+        <li class="section__item">
+          <h3 class="section__title">Bengal</h3>
+          <a class="section__link" href="chat-2.html">Le chat Bengal</a>
           <img
+            class="section__image"
             src="/public/img/cats/chat-bengal.webp"
             alt="chat bengal"
-            width="500"
+            width="300"
           />
-        </div>
-        <div>
-          <h3>Birman</h3>
-          <li class="page__liste-icons">
-            <a href="chat-3.html">Le chat Birman</a>
-          </li>
+        </li>
+        <li class="section__item">
+          <h3 class="section__title">Birman</h3>
+          <a class="section__link" href="chat-3.html">Le chat Birman</a>
           <img
             src="/public/img/cats/chat-birmanie.webp"
             alt="chat birmanie"
-            width="500"
+            width="300"
           />
-        </div>
-        <div>
-          <h3>Sphynx</h3>
-          <li class="page__liste-icons">
-            <a href="chat-4.html">Le chat Sphynx</a>
-          </li>
+        </li>
+        <li class="section__item">
+          <h3 class="section__title">Sphynx</h3>
+          <a class="section__link" href="chat-4.html">Le chat Sphynx</a>
           <img
+            class="section__image"
             src="/public/img/cats/chat-sphinx.webp"
             alt="chat sphynx"
-            width="500"
+            width="300"
           />
-        </div>
-        <li class="page__liste-icons">
-          <a href="index.html">Liste des chats</a>
         </li>
-        <li><a href="/">Retour à l'accueil</a></li>
+        <li class="page__item page__item--list">
+          <a class="section__link" href="index.html">Liste des chats</a>
+        </li>
+        <li class="page__item page__item--list">
+          <a class="section__link" href="/">Retour à l'accueil</a>
+        </li>
       </ul>
     </section>
   </body>

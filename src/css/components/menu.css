@@ -49,6 +49,11 @@ body {
   overflow-x: hidden;
 }
 
+.img {
+  width: 100%;
+  height: auto;
+}
+
 /* Pages */
 .page {
   background-color: #fff8e1;
@@ -58,6 +63,19 @@ body {
   font-size: 40px;
   text-align: center;
   font-family: 'Bangers';
+}
+
+.page__item {
+  background-color: #f9f9f9;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+.page__item--list {
+  width: 150px;
+  align-items: center;
+  background-color: #fff8e1;
 }
 
 .page__description {
@@ -207,6 +225,7 @@ body {
   align-items: center;
   margin: 10px;
   text-align: center;
+  
 }
 
 .section__link {
@@ -218,7 +237,14 @@ body {
   color: rgb(58, 0, 128)
 }
 
+
+li::marker {
+  content: none;
+  /* Supprime le marqueur */
+}
+
 .section__link:hover {
   color: rgb(255, 255, 255);
   background-color: black;
 }
+
