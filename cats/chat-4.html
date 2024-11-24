@@ -4,40 +4,39 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="/src/css/components/menu.css" />
+
   </head>
-  <body>
-    <h1>Le Chat Shynx</h1>
-    <p>
+  <body class="page">
+    <h1 class="page__title">Le Chat Sphynx</h1>
+    <p class="page__description">
       Le Sphynx est un chat fascinant, connu pour son absence de poils et son
       apparence unique. Malgré sa peau nue, il est chaleureux, affectueux et
       plein de vie, parfait pour ceux qui recherchent un compagnon original et
       câlin.
     </p>
-    <section>
-      <ul>
-        <div>
+    <section class="cat-details">
+      <ul class="cat-details__list">
+        <li class="cat-details__item">
           <img
+            class="cat-details__image"
             src="../public/img/cats/chat-sphinx.webp"
-            alt="chat numéro 1"
+            alt="chat sphynx"
             width="500"
           />
-          <h3>Description</h3>
-          <p>
+          <h3 class="cat-details__title">Description</h3>
+          <p class="cat-details__text">
             Le Sphynx est une race de chat unique qui se distingue par son
             absence de poils, lui conférant une apparence presque
             extraterrestre. Sa peau, souvent comparée à celle d'un daim ou d'une
             pêche, peut varier en couleur et peut avoir une texture lisse ou
             légèrement ridée, surtout autour de la tête et du cou. Contrairement
             à ce que son apparence pourrait laisser penser, le Sphynx est un
-            chat extrêmement sociable et affectueux, qui recherche constamment
-            la compagnie de ses humains. Il aime être porté et câliné, et il est
-            souvent décrit comme étant "un chat-chien" en raison de son attitude
-            amicale et de sa capacité à suivre son maître partout.
           </p>
-        </div>
-        <div>
-          <h3>Anecdote</h3>
-          <p>
+        </li>
+        <li class="cat-details__item">
+          <h3 class="cat-details__title">Anecdote</h3>
+          <p class="cat-details__text">
             Saviez-vous que la race Sphynx est née au Canada dans les années
             1960 ? Un éleveur a découvert qu'un chat domestique sans poils avait
             donné naissance à des petits similaires. Cette découverte a conduit
@@ -47,15 +46,19 @@
             des chats les plus populaires, apprécié pour son caractère et son
             apparence unique.
           </p>
-        </div>
-        <li><a href=".">Retour à la liste des chats</a></li>
+        </li>
+        <li class="cat-details__link">
+          <a href=".">Retour à la liste des chats</a>
+        </li>
       </ul>
     </section>
   </body>
-  <footer>
-    <li><a href=".">Dossier courant (liste des chats)</a></li>
-    <li><a href="index.html">Index du dossier (liste des chats)</a></li>
-    <li><a href="..">Dossier parent (index des chats et chiens)</a></li>
-    <li><a href="/">Racine du site (index des chats et chiens)</a></li>
+  <footer class="footer">
+    <ul class="footer__list">
+      <li class="footer__item"><a class="footer__link" href=".">Dossier courant (liste des chats)</a></li>
+      <li class="footer__item"><a class="footer__link" href="index.html">Index du dossier (liste des chats)</a></li>
+      <li class="footer__item"><a class="footer__link" href="..">Dossier parent (index des chats et chiens)</a></li>
+      <li class="footer__item"><a class="footer__link" href="/">Racine du site (index des chats et chiens)</a></li>
+    </ul>
   </footer>
 </html>
